@@ -1,4 +1,4 @@
-# EKS CSR Demo with cert-manager (Teaching Lab)
+# EKS CSR Demo with cert-manager (Learning Lab)
 
 This guide shows, step by step, how to issue a client certificate through Kubernetes CertificateSigningRequests (CSR) on Amazon EKS using cert-manager as the signer. Every step includes a short explanation and a dedicated Copy block for commands.
 
