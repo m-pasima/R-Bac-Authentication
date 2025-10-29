@@ -1,0 +1,12 @@
+# Set the user credentials
+kubectl config set-credentials pasima \
+  --client-certificate=pasima.crt \
+  --client-key=pasima.key
+
+# Create a new context using the user
+kubectl config set-context pasima-context \
+  --cluster=$(kubectl config current-context | cut -d'@' -f2) \
+  --user=pasima
+
+# Switch to the new context
+kubectl config use-context pasima-context
